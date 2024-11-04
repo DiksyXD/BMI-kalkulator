@@ -1,0 +1,51 @@
+/*INI CSS*/
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+}
+
+form {
+    background-color: aliceblue;
+    padding: 8px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+#div-kal {
+    background-color: aliceblue ;
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+    margin: 10px;
+    border-width: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#p-nilai {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#hasil-artikel {
+    text-align: center;
+    margin: 50px;
+}
+
+button {
+    border-style: none;
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
