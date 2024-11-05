@@ -25,14 +25,20 @@
 
             <form>
                 <div>
-                    <label for="berat-badan">Berat Badan :</label>
-                    <input id="berat-badan" type="number">
+                    <label for="berat-badan">Berat Badan (kg):</label>
+                    <input id="berat-badan" type="number" required>
+
+                    <label for="tinggi-badan">Tinggi Badan (m):</label>
+                    <input id="tinggi-badan" type="number" required>
                 </div>
 
                 <div>
-                    <button>Hitung BMI</button>
-                    <button>Reset</button>
+                    <button type="button" id="hitungBmiBtn">Hitung BMI</button>
+                    <button type="reset">Reset</button>
                 </div>
+            </form>
+
+
 
             </form>
 
@@ -59,8 +65,7 @@
             <section>
                 <div id="div-kal">
                     <h3>Hasil Kalkulasi</h3>
-                    <p id="p-nilai">24,4</p>
-                    <p>Normal,Kurang Baik,Buruk</p>
+                    <div id="hasilBmi"></div>
                 </div>
             </section>
 
@@ -76,7 +81,7 @@
     <footer>
         <span>Made By Diki</span>
     </footer>
-
+    <script type="text/javascript" src="js\script.js"></script>
 </body>
 
 </html>
