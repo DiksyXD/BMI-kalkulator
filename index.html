@@ -1,87 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css\style.css" />
+    <title>Kalkulator BMI</title>
+    <link rel="stylesheet" href="css\style.css">
 </head>
 
 <body>
-    <!-- section form -->
-    <main>
-        <section>
-
-            <div>
-                <header>
-                    <h1>Kalkulator BMI</h1>
-                </header>
-
-                <article>
-                    <p>Artikel Mengenai BMI</p>
-                </article>
+    <nav class="navbar">
+        <div class="logo">Made By Diki</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <form id="bmiForm">
+            <div class="input-group">
+                <label for="weight">Berat (kg):</label>
+                <input type="number" id="weight" required>
             </div>
-
-            <form>
-                <div>
-                    <label for="berat-badan">Berat Badan (kg):</label>
-                    <input id="berat-badan" type="number" required>
-
-                    <label for="tinggi-badan">Tinggi Badan (m):</label>
-                    <input id="tinggi-badan" type="number" required>
-                </div>
-
-                <div>
-                    <button type="button" id="hitungBmiBtn">Hitung BMI</button>
-                    <button type="reset">Reset</button>
-                </div>
-            </form>
-
-
-
-            </form>
-
-            <div>
-                <header>
-                    <h2>Form Information</h2>
-                </header>
-
-                <article>
-                    <p>Artikel Penjelasan Mengenai Form</p>
-                </article>
+            <div class="input-group">
+                <label for="height">Tinggi (m):</label>
+                <input type="number" id="height" step="0.01" required>
             </div>
-        </section>
-
-
-
-        <!-- section form result -->
-        <section>
-            <header>
-                <h1>Hasil</h1>
-            </header>
-
-            <!-- Hasil Kalkulasi -->
-            <section>
-                <div id="div-kal">
-                    <h3>Hasil Kalkulasi</h3>
-                    <div id="hasilBmi"></div>
-                </div>
-            </section>
-
-            <!-- info dari hasil  -->
-            <article id="hasil-artikel">
-                <p>Lorem Ipsum Dolor Sit Amet</p>
-            </article>
-
-
-        </section>
-    </main>
-
-    <footer>
-        <span>Made By Diki</span>
-    </footer>
-    <script type="text/javascript" src="js\script.js"></script>
+            <button type="submit">Hitung BMI</button>
+            <button type="button" id="resetButton">Reset</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+    <div class="footer">
+        <span><p>PoweredByAI</p></span>
+    </div>
+    <script src="js\script.js"></script>
 </body>
 
 </html>
